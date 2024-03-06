@@ -1,5 +1,5 @@
 SELECT 
-    s.products_id, 
+    products_id, 
     date_date, 
     orders_id,
     revenue, 
