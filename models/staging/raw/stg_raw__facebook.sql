@@ -12,8 +12,8 @@ renamed as (
         date_date,
         paid_source,
         campaign_key,
-        campgn_name AS campaing_name,
-        CAST(ads_cost AS float64) AS ads_cost,
+        campgn_name,
+        ads_cost,
         impression,
         click
 
