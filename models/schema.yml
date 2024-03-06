@@ -1,4 +1,5 @@
 version: 2
+
 sources:
   - name: raw
     schema: gz_raw_data
@@ -7,8 +8,10 @@ sources:
       - name: sales
         identifier: raw_gz_sales 
         description: greenweez sales
-        columns:
-          - name: date_date
+        tests:
+        - unique:
+           column_name: "(orders_id || '-' || pdt_id)"
+          
       - name: product
         identifier: raw_gz_product 
         description: greenweez products
